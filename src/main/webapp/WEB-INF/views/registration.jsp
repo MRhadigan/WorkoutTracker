@@ -8,7 +8,7 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/minty/bootstrap.min.css" />
 </head>
-<body>
+<body background="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Sjgjhp3zeiw5hayru/motion-graphics-of-3d-abstract-geometric-shape-transformation-background_r8yz0ejie_thumbnail-full01.png">
 	<br>
 	<br>
 
@@ -20,7 +20,7 @@
 	<div class="form-group">
 	<label>Enter Your First Name</label><input type="text" class="form-control" name="firstname"><br>
 	<label>Enter Your Last Name</label><input type="text" class="form-control" name="lastname"><br>
-	<label>Enter Your Favorite Climbing Gym</label><input type="text" class="form-control" name="favgym"><br>
+	<label>Enter Your Favorite Climbing Spot</label><input type="text" class="form-control" name="favgym"><br>
 	<label>Enter Your Height</label><input type="text" class="form-control" name="height"><br>
 	<label>Enter Your Weight</label><input type="text" class="form-control" name="weight"><br>
 	<label>Enter Your Age</label><input type="text" class="form-control" name="age"><br>

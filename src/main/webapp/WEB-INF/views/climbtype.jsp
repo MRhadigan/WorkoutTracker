@@ -8,7 +8,7 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/minty/bootstrap.min.css" />
 </head>
-<body>
+<body background="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Sjgjhp3zeiw5hayru/motion-graphics-of-3d-abstract-geometric-shape-transformation-background_r8yz0ejie_thumbnail-full01.png">
 
 
 <p style="padding: 20px">${welcome} ${sessionUser.firstname}</p>
@@ -26,5 +26,8 @@
 <br><br><br><br><br><br>
 <a href="progresspage"><button>YOUR PROGRESS PAGE!</button></a>
 </div>
+<div>${listbolders}</div>
+
+
 </body>
 </html>

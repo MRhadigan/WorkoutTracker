@@ -1,5 +1,7 @@
 package com.workout.WorkoutTracker.entity;
 
+import java.util.Date;
+
 //import java.util.ArrayList;
 //import java.util.List;
 
@@ -15,6 +17,7 @@ import javax.persistence.Table;
 
 import org.hibernate.annotations.NotFound;
 import org.hibernate.annotations.NotFoundAction;
+import org.springframework.format.annotation.DateTimeFormat;
 
 
 
@@ -27,14 +30,15 @@ public class Boulder {
 	@Column(name= "boulderid")
 	private Long boulderid;
 	@Column(name = "user_id")
-	private Long user_id;
+	private Long userid;
 	@Column(name= "num_times")
 	private Long numboulder;
 	@Column(name= "boulder_time")
 	private String bouldertime;
 	@Column(name= "boulder_difficulty")
 	private String boulderdifficulty;
-	//@Column(name = "user_id")
+
+
 	
 	@OneToOne
 	@JoinColumn(name = "user_id", insertable = false, updatable = false)
@@ -60,29 +64,33 @@ public class Boulder {
 	
 	}
 	
-	public Boulder(Long user_id, Long numboulder, String bouldertime, String boulderdifficulty) {
-		this.user_id = user_id;
+
+	public Boulder(Long numboulder, String bouldertime, String boulderdifficulty) {
+
 		this.numboulder = numboulder;
 		this.bouldertime = bouldertime;
 		this.boulderdifficulty = boulderdifficulty;
+
 	}
+	
 
 
-	public Boulder(Long boulderid, Long user_id, Long numboulder, String bouldertime, String boulderdifficulty, User climbUser) {
+	public Boulder(Long boulderid, Long userid, Long numboulder, String bouldertime, 
+			String boulderdifficulty, User climbUser) {
 		this.boulderid = boulderid;
-		this.user_id = user_id;
+		this.userid = userid;
 		this.numboulder = numboulder;
 		this.bouldertime = bouldertime;
 		this.boulderdifficulty = boulderdifficulty;
 		this.climbUser = climbUser;
 	}
-	
+
 	public Long getUser_id() {
-		return user_id;
+		return userid;
 	}
 
-	public void setUser_id(Long user_id) {
-		this.user_id = user_id;
+	public void setUser_id(Long userid) {
+		this.userid = userid;
 	}
 
 	public Long getBoulderid() {
@@ -123,14 +131,26 @@ public class Boulder {
 	public void setBoulderdifficulty(String boulderdifficulty) {
 		this.boulderdifficulty = boulderdifficulty;
 	}
+	
+//	public String getDateboulder() {
+//		return dateboulder;
+//	}
+//
+//
+//	public void setDateboulder(String dateboulder) {
+//		this.dateboulder = dateboulder;
+//	}
 //	
 
 	@Override
 	public String toString() {
-		return "Boulder [boulderid=" + boulderid + ", user_id=" + user_id + ", numboulder=" + numboulder
+		return "Boulder [boulderid=" + boulderid + ", userid=" + userid + ", numboulder=" + numboulder
 				+ ", bouldertime=" + bouldertime + ", boulderdifficulty=" + boulderdifficulty + ", climbUser="
 				+ climbUser + "]";
 	}
+
+
+
 
 
 

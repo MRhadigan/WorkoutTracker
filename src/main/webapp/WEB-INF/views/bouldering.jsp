@@ -8,15 +8,19 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/minty/bootstrap.min.css" />
 </head>
-<body>
+<body background="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Sjgjhp3zeiw5hayru/motion-graphics-of-3d-abstract-geometric-shape-transformation-background_r8yz0ejie_thumbnail-full01.png">
 <div class="top-nav-bar" style="font-size:1.5em">
 <p style="padding: 20px">${welcome} ${sessionUser.firstname}</p>
 </div>
 <div style="text-align: center">
 <h1>BOULDERING ASCENT</h1>
 <br><br><br>
+<!-- <h3>What date did you climb? (dd/mm/yyyy)</h3>
+<br>
+<input type="text" name="dateboulder"> -->
+<br><br>
 <h3>What Level of Difficulty?</h3>
-<form action="/addboulder/${sessionUser.user_id}/${numboulder}/${bouldertime}/${boulderdifficulty}">
+<form action="/addboulder/${sessionUser.user_id}">
 <select name="boulderdifficulty">
 <option value="V 0">V 0</option>
 <option value="V 0+">V 0+</option>
@@ -63,8 +67,9 @@
 <br><br><br>
 
 <h3>How many times did you climb that route?</h3>
-
+<br>
 <input type="text" name="numboulder"> 
+<br><br>
 	<input type="submit"
 			value="Submit">  
 			

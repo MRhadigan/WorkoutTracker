@@ -16,9 +16,22 @@
 <br><br><br>
 <h1>HERE IS YOUR PROGRESS!</h1>
 <br><br>
+<h3>Bouldering Progress</h3>
 <table border="1">
+						<tr>
+							<!-- <th></th> -->
+							<th>Boulder ID#</th>
+							<th>User ID#</th>
+							<th>Number of times</th>
+							<th>Time spent bouldering</th>
+							<th>Boulder difficulty</th>
+				
+							<th></th>
+							<!-- <th></th> -->
+						</tr>
 	<c:forEach var="boulder" items="${boulderinfo}">
 	<tr>
+	<td>${boulder.boulderid}</td>
 	<td>${sessionUser.user_id}</td>
 	<td>${boulder.numboulder}</td>
 	<td>${boulder.bouldertime}</td>
